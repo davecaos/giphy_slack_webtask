@@ -1,10 +1,10 @@
 # giphy_slack_webtask
-Little example of Slack's '/giphy' command using webtask 
-this webtask only post in channels (it will be posted by default at the general channel with doge photos)
+Little example of hacky version of Slack's '/giphy' command using webtask,
+this will only post in channels (it will be posted by default at the general channel with doge photos)
 
-## Usage
+## Create the webtask
 ```bash
-wt create --secret BOT_TOKEN=PUT_OUR_SLACK_TOKEN_HERE giphy.js
+wt create --secret BOT_TOKEN=PUT_OUR_SLACK_TOKEN_HERE https://raw.githubusercontent.com/davecaos/giphy_slack_webtask/master/giphy.js
 ```
 
 ## Result
